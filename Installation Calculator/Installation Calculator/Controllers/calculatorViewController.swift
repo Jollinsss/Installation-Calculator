@@ -31,7 +31,7 @@ struct ContentView: View {
 
                     //TextField("Test", text: "Test")
 
-                    Text("How long will your download take?")
+                    Text("Calculate the required time for download of data")
                          .font(.subheadline)
                     Spacer()
 
