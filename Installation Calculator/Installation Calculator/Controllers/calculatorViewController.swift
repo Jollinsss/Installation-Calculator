@@ -50,7 +50,7 @@ struct ContentView: View {
                     }
                     
                     HStack {
-                    TextField("Enter File Size...", text: $sizeField)
+                    TextField("Enter File Size in MB...", text: $sizeField)
                         .keyboardType(.numberPad)
                         .onReceive(Just(sizeField)) { newValue in
                                 let filtered = newValue.filter { "0123456789".contains($0) }
@@ -58,6 +58,7 @@ struct ContentView: View {
                                     self.sizeField = filtered
                                 }
                         }
+                    
                         Text("MB")
                         
                     }
